@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { DadoComponent } from './dado/dado.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dado';
+  @ViewChild('dado') dado!:DadoComponent;
+  dize(){
+    console.log('asdasd');
+    console.log(this.dado.valor1)
+    this.dado.cambiarValor();
+  }
 }

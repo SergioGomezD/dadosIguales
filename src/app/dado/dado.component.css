@@ -1,0 +1,19 @@
+.forma{
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  color: #FFF;
+  background-color: #000;
+  border-radius: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.verde{
+  background-color: green;
+}
+.azul{
+  background-color: blue;
+}
